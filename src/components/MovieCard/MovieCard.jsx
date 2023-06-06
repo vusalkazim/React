@@ -1,6 +1,7 @@
 import React from 'react'
 
 function MovieCard(props) {
+  const {deleteMovie,id} = props;
   return (
     <>
     
@@ -10,7 +11,7 @@ function MovieCard(props) {
                     <h5 className="card-title">{props.name}</h5>
                     <p className="card-text">{props.surname}</p>
                     <a href="#!" className="btn btn-primary">Go somewhere</a>
-                    <button >Sil</button>
+                    <button onClick={() => deleteMovie(id)} >Sil</button>
                 </div>
             </div>
     
